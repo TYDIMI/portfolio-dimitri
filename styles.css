@@ -1,0 +1,114 @@
+*
+{
+    margin: 0; /* Remover as margens padrão do navegador */
+    padding: 0; /* Remover os preenchimentos padrão do navegador */
+    box-sizing: border-box; /* Garante que bordas não aumentem o tamanho dos elementos */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilizar barra de navegação */
+.navbar
+{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    box-shadow: 0 2px 5px rgba(0,0,0.1);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.navbar ul li a:hover{
+    background-color: #fff;
+    color:rgb(255, 0, 0);
+    box-shadow: 0px 4px 10px blue;
+    transform: translateY(-2px);
+}
+
+.slider {
+    margin: 20px auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.slider-content
+{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.slider-content input
+{
+    display: none; /* Esconde os botões RADIO */
+}
+
+/* Estilo de cada caixa de imagem */
+.slider-box
+{
+    width: 25%;/* Cada foto ocupa 25% */
+    transition: 0.6s;/* Tempo de animação de deslize entre as fotos */
+}
+
+/* Garante que a imagem cubra todo o espaço sem distorcer */
+.slider-box img
+{
+    width: 800%; /* Largura fixa para manter a imagem */
+    height: 400%; /* Altura fixa para manter a imagem */
+    object-fit: cover; /* Corta a imagem para preencher o espaço sem achatar */
+}
+
+/* Lógica de movimento: ajustando para 4 imagens */
+#radio1:checked ~ .first { margin-left: 0; }
+
+/* imagem 2: Pula a primeira imagem (25%) */
+#radio2:checked ~ .first { margin-left: -25%; }
+
+/* imagem 3: Pula as duas primeiras (50%) */
+#radio3:checked ~ .first { margin-left: -50%; }
+
+/* imagem 4: Pula as três primeiras (75%) */
+#radio4:checked ~ .first { margin-left: -75%; }
+
+/* Estilo dos botões manuais (bolinhas) */
+.nav-manual
+{
+    position: absolute; /* posicionamento fixo em relação ao slider */
+    width: 800px; /* Mesma largura do slider */
+    margin-top: -40px; /*Joga as bolinhas para dentro da imagem */
+    display: flex;
+    justify-content: center; /* Centraliza as bolinhas horizontalmente */
+}
+.manual.btn
+{
+    border: 2px solid rgb(255, 255, 255); /* Borda branca para visibilidade */
+    padding: 5px; /* Tamanho da bolinha */
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px; /* Espaçamento entre as bolinhas */
+    transition: 0.3s; /* Suavizar a mudança  de cor no hover */
+}
+
+.manual.btn:hover
+{
+    background-color: rgb(255, 255, 255); /* Cor de fundo ao passar o mouse */
+}
