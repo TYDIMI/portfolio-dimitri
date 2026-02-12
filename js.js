@@ -27,3 +27,4 @@ function proxImg() {
     // Quando o radio é marcado, o CSS que configuramos irá mudar a imagem
     // automaticamente.
    document.getElementById("radio" + contador) =true;
+}
