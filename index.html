@@ -8,52 +8,74 @@
 
 </head>
 <body>
-    <!-- PARAGRAFO DA AULA 2-->
-<header class="navbar">
-    <div class="logo">Menu:</div>
-    <nav>
+    <header class="navbar">
+        <div class="logo">Menu:</div>
+        <nav>
+            <ul>
+                <li><a href=#galeria>Galeria</a></li>
+                <li><a href="https://youtu.be/6n3pFFPSlW4?si=fc4czCB_7sSoUMvx">Login</a></li>
+                <li><a href=#contato>Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--SOBRE MIM-->
+    <section class="sobre-mim">
+        <h1 style="color: #ffffff; font-size: 75px">Meu Portfólio</h1>
+
+        <p style="color:#ffffff; font-family: Arial, Helvetica, sans-serif;">
+        Eu:
+        </p>
+
+        <img src="https://tse1.mm.bing.net/th/id/OIP.9s8n2l7mXoQh0a3e5j6c9gHaEo?pid=ImgDet&w=184&h=184&c=7&dpr=1,3&o=7&rm=3"
+        style="width: 600px; border: 3px solid rgb(255, 0, 0);"
+        alt="foto de Perfil">
+        <h3 style="color: #ffffff;">Dimitri Santos Silva Lins</h3>
+        <p>Lista de coisas que mim gostar :)</p>
+        <br>
         <ul>
-            <li><a href="https://youtu.be/UqFORtFuyN0?si=0psb98mCjDz172uy">Perfil</a></li>
-            <li><a href="https://youtu.be/CBEvfZu4HE4?si=oJwec38t6K37v8y-">Cadastrar</a></li>
-            <li><a href="https://youtu.be/6n3pFFPSlW4?si=fc4czCB_7sSoUMvx">Login</a></li>
-            <li><a href="https://youtu.be/XvG-ejH0zGg?si=O7Yqe2jkxGd46sKq">Pesquisar</a></li>
+            <li>Música</li>
+            <li>Games (colocar link para conta da steam)</li>
+            <li>Mi casa</li>
+            <li>Comida (especialmente japonesa)</li>
         </ul>
-    </nav>
-</header>
-
-     <section style="text-align: center; border: 2px solid #ff0000; padding: 20px">
-        <h1 style="color: #ffffff; font-size: 75px">Lula morre de parada cardíaca durante reunião</h1>
-
-            <p style="color:#ffffff; font-family: Arial, Helvetica, sans-serif;">
-            Momentos antes de sua morte:
-            </p>
-
-        <img src="https://planeta92.com.br/wp-content/uploads/2023/10/Lula-completa-78-anos-e-politicos-comemoram-%E2%80%98Maior-presidente-do-Brasil.jpg"
-            style="width: 1200px; border: 3px solid rgb(255, 0, 0);"
-            alt="foto de Perfil">
-
-         <br> 
-
+        <br> 
         <a href="https://youtu.be/Aq5WXmQQooo?si=X4igVDEJL5Y-cgqV">
-        <button style="background-color: rgb(107, 0, 0); color: rgb(255, 255, 255); border: none; padding: 10px 20px; border-radius: 5px;">
-           Clique para saber mais
-        </button>
+            <button style="background-color: rgb(107, 0, 0); color: rgb(255, 255, 255); border: none; padding: 10px 20px; border-radius: 5px;">
+            Clique para saber mais
+            </button>
         </a>
-     </section>
-<br>
-<br>
+    </section>
+    <br>
+    <br>
 
 <!-- GALERIA DE IMAGENS -->
-    <h2 style="text-align: center; margin-top: 20px; color: white">Minha Galeria</h2>
+    <h2 style="text-align: center; margin-top: 20px; color: white;" id="galeria">Minha Galeria</h2>
     <section class="galeria" style="text-align: center; border: 2px solid rgb(0, 0, 255); padding: 20px">
-            <img src="https://tse3.mm.bing.net/th/id/OIP.dYkR8PA40brtoUm54FkQZwHaID?pid=ImgDet&w=184&h=200&c=7&dpr=1,3&o=7&rm=3" alt="Projeto 1">
-            <img src="https://tse3.mm.bing.net/th/id/OIP.dYkR8PA40brtoUm54FkQZwHaID?pid=ImgDet&w=184&h=200&c=7&dpr=1,3&o=7&rm=3" alt="Projeto 2">
-            <img src="https://tse3.mm.bing.net/th/id/OIP.dYkR8PA40brtoUm54FkQZwHaID?pid=ImgDet&w=184&h=200&c=7&dpr=1,3&o=7&rm=3" alt="Projeto 3">
-                </section>
+        <img src="https://tse3.mm.bing.net/th/id/OIP.dYkR8PA40brtoUm54FkQZwHaID?pid=ImgDet&w=184&h=200&c=7&dpr=1,3&o=7&rm=3" alt="Projeto 1">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.4_LvyuPsGQig-u2HIY2wJgHaHa?pid=ImgDet&w=184&h=184&c=7&dpr=1,3&o=7&rm=3
+" alt="Projeto 2">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.9s8n2l7mXoQh0a3e5j6c9gHaEo?pid=ImgDet&w=184&h=184&c=7&dpr=1,3&o=7&rm=3" alt="Projeto 3">
+    </section>
 
+    <!-- CONTATO -->
+    <h2 style="text-align: center; margin-top: 20px; color: white"  id="contato">Contato</h2>
+    <section class="contato" style="text-align: center; border: 2px solid rgb(162, 0, 0); padding: 20px">
+        <form>
+            <input type="text" name="user-name" placeholder="Nome" required style="padding: 10px; margin: 10px; border-radius: 5px; border: 1px solid #ccc;">
+            <br>
+            <input type="email" name="user-email" placeholder="@gmail.com" required style="padding: 10px; margin: 10px; border-radius: 5px; border: 1px solid #ccc;">
+            <br>
+            <input type="tel" name="user-phone" placeholder="(DDD) 99999-9999" style="padding: 10px; margin: 10px; border-radius: 5px; border: 1px solid #ccc;">
+            <br>
+            <textarea name="message" placeholder="Mensagem" required style="padding: 10px; margin: 10px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+            <br>
+            <button type="submit" style="background-color: rgb(107, 0, 0); color: rgb(255, 255, 255); border: none; padding: 10px 20px; border-radius: 5px;">Enviar</button>
+        </form>
+    </section>
 <!-- SLIDER DE IMAGENS -->
- <!-- CONSERTAR ERRO DE BOLAS NÃO APARECEREM EM BAIXO DAS IMAGENS -->
-     <section class="slider">
+ <!-- CONSERTAR ERRO DE NÃO APARECER AS IMAGENS -->
+    <section class="slider">
         <div class="slider-content">
             <input type="radio" name="btn-radio" id="radio1" checked>
             <input type="radio" name="btn-radio" id="radio2">
@@ -76,39 +98,39 @@
             <img src="https://picsum.photos/id/20/800/400" alt="Escrivaninha">
         </div>
         
-<div class="nav-auto">
-    <div class="auto-btn1"></div>
-    <div class="auto-btn2"></div>
-    <div class="auto-btn3"></div>
-    <div class="auto-btn4"></div>
-</div>
+        <div class="nav-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+        </div>
 
-<div class="nav-manual">
-    <label for="radio1" class="manual-btn"></label>
-    <label for="radio2" class="manual-btn"></label>
-    <label for="radio3" class="manual-btn"></label>
-    <label for="radio4" class="manual-btn"></label>
-</div>
+        <div class="nav-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
     </section>
 
 
 <!--RODAPÉ DA PAGINA-->
-<footer class="rodape-principal">
-    <div class="container-rodape">
-        <div class="info-copyright">
-            <p>&copy; 2026 - Dimitri Santos</p>
-            <p>BackEnd Developer</p>
-            <nav class="links-sociais">
-                <a href="https://github.com/TYDIMI">Github</a>
-                <a href="#">Linkedin</a>
-                <a href="https://www.instagram.com/dimi_lins/">Instagram</a>
-            </nav>
+    <footer class="rodape-principal">
+        <div class="container-rodape">
+            <div class="info-copyright">
+                <p>&copy; 2026 - Dimitri Santos</p>
+                <p>BackEnd Developer</p>
+                <nav class="links-sociais">
+                    <a href="https://github.com/TYDIMI">Github</a>
+                    <a href="#">Linkedin</a>
+                    <a href="https://www.instagram.com/dimi_lins/">Instagram</a>
+                </nav>
+            </div>
         </div>
-    </div>
-    <div class="rodape-inferior">
-        <p>Desenvolvido durante a aula de Desenvolvimento de Sistemas</p>
-    </div>
-</footer>
+        <div class="rodape-inferior">
+            <p>Desenvolvido durante a aula de Desenvolvimento de Sistemas</p>
+        </div>
+    </footer>
 
 </body>
 <script src="js.js"></script>
